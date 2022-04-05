@@ -1,20 +1,30 @@
 package day0;
 
 public class Toyota {
-    String marka;
-    int tekerSayisi = 4;
-    boolean motoruVarMi = true;
-    String yakıt;
-    String model;
-    int yıl;
+    String isim;
+    String soyIsım;
+    int numara;
+    boolean gercekMİ;
 
-   public void maxHız(){
-       if(yakıt.equalsIgnoreCase("benzinli")){
-           System.out.println("benzinli arabalar 240hhız yapar");
-       }else if (yakıt.equalsIgnoreCase("dizel")){
-           System.out.println("benzinli arabalar 260 hhız yapar");
-       }
+    public Toyota(String ism, String soyism, int no, boolean grc) {
+        isim = ism;
+        soyIsım = soyism;
+        numara = no;
+        gercekMİ = grc;
 
     }
 
+    public Toyota(String mustafa, String yıldız, int no) {
+        this.isim = isim ;
+        this.soyIsım = soyIsım ;
+        this.numara = numara ;
+
+    }
+
+    public String toString() {
+        return ("isim : " + isim +
+                "soyIsım : " + soyIsım +
+                "numara : " + numara +
+                "gercekMı :" + gercekMİ);
+    }
 }
