@@ -106,6 +106,6 @@ public class Lambda01 {
 
         sayi.stream().filter(c -> c % 2 == 0 && c > 34).forEach(Lambda01::yazdır);
 
-
+//
     }
 }
